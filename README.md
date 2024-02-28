@@ -1,16 +1,14 @@
-# sealmolt
-Software for fitting model to molt progress in elephant seals
-
 Programs for fitting progress of molt in elephant seals, written in C++. THe program should work on a Linux system as is, with the data included, but knowledge of C++ and Bayesian statistics are to understand the output or adapt the code. The program fits a logistic curve to observations that increase from 0 to 100 for multiple individuals across multiple years. The logistic parameters include a hyperdistribution across years and animals.  
 
 Files with extension .h or .cpp contain the code:
 1) modelMolt.h defines the molt class and runs all calculations, and includes subroutines in header files
 2) utilities.cpp has commonly used subroutines
 3) util.h has commonly used subroutines
-4) likelihood.h has common likelihood functions for statistical calculations
-5) statistics.h has common statistical functions
-6) randomgenerator.h has a random number generator
-7) modelMolt.cpp has the main function, accepting command-line parameters and executing a complete run
+4) Array2D.h is used within subroutines
+5) likelihood.h has common likelihood functions for statistical calculations
+6) statistics.h has common statistical functions
+7) randomgenerator.h has a random number generator
+8) modelMolt.cpp has the main function, accepting command-line parameters and executing a complete run
 
 
 The file FemaleMolt.csv has sample data. It includes 4 tab-delimited columns:
